@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
+ 
 body, html{
     margin: 0;
     padding: 0;
@@ -93,6 +93,7 @@ body, html{
     background: -o-linear-gradient(110deg, #fff 70%, #354051 65%);
     background: -moz-linear-gradient(110deg, #fff 70%, #354051 65%);
     background: linear-gradient(110deg, #fff 70%, #354051 65%);
+    /* background: linear-gradient(110deg, #fff 80%, #354051 50%); */
     background-size: cover;
     background-position: 50% 21%;
     background-size: cover;
@@ -114,12 +115,14 @@ body, html{
     text-align: left;
 }
 .sky{
+    margin-bottom: 1rem;
     font-family: Roboto, sans-serif;
     font-size: 3rem !important;
     font-weight: bold !important;
     color: #ef7c01 !important;
 }
 .skating{
+    margin-bottom: 1rem;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     letter-spacing: 10px;
@@ -158,4 +161,58 @@ body, html{
 .fa:hover{
   transform: scale(1.2);
   color: #021736;
+}
+
+.object-cover{
+  width: 150%;
+  height: 150%;
+}
+
+@media only screen and (max-width: 1027px){
+  .custom-padding {
+    padding-left: 0vw !important;
+}
+.bg-aurora{
+  background: linear-gradient(110deg, #fff 66%, #354051 50%);
+      /* background: linear-gradient(110deg, #fff 80%, #354051 50%); */
+}
+}
+
+@media only screen and (max-width: 768px){
+  .bg-aurora{
+    background: linear-gradient(110deg, #fff 80%, #354051 50%);
+  }
+  .mb-16 {
+    margin-bottom: 0rem !important;
+  }
+  .custom-padding{
+    margin-top: 4rem !important;
+  }
+  .mb-8 {
+    margin-bottom: 0rem !important;
+  }
+  .fa{
+    margin-top: 0px !important;
+  }
+  .mb-4 {
+    margin-bottom: 0rem !important;
+  }
+  .skating, .sky{
+    margin-bottom: 0rem !important;
+  }
+  .object-cover{
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+
+@media only screen and (max-width: 400px){
+  .object-cover{
+    margin-left: auto;
+    margin-right: 0 !important;
+  }
 }
